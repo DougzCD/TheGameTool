@@ -1,10 +1,10 @@
 import requests
 from model import Character
 
-BASE_URL = "https://rickandmortyapi.com/api/character/{}"
+BASE_URL = "https://api.genshin.dev/characters/{}"
 
 
-def get_data_from_rick_and_morty_apis(database):
+def get_data_from_genshin_apis(database):
 
     for i in range(1, 20):
         response = requests.get(BASE_URL.format(i))

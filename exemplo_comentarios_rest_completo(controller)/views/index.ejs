@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Comentários</h1>
+    <ul>
+        <% for(let comentario of comentarios) { %>
+            <li>
+                <%= comentario.comentario %>  
+                - <b><%= comentario.usuario %></b> 
+                <a href="/comentario/<%=comentario.id%>">editar</a> 
+                <a href='' onclick="apagaMensagem(<%=comentario.id%>)">apagar</a>
+            </li>
+        <% } %>
+    </ul>
+
+    <a href="/comentario/novo">Novo comentário</a>
+
+</body>
+</html>
