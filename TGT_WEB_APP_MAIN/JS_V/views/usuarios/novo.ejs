@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+<body>
+    <h1>Novo usuário</h1>
+    <form action='/usuarios/novo' method='POST'>
+        <section>
+            <label>Digite o nome do usuário: </label>
+            <input type="text" id='nomeUsuario' placeholder="Digite o nome do usuário" name='username'>
+        </section>
+
+        <section>
+            <label>Digite a senha: </label>
+            <input type="text" id='senhaUsuario' placeholder="Digite a senha" name='password'>
+        </section>
+        <button>Enviar</button>
+    </form>    
+</body>
+</html>

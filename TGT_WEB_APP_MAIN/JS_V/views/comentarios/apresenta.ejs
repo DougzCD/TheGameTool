@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+<body>
+    <h1>ID do comentário: <%=comentario.id%></h1>
+    <h2><%=comentario.comment%> - <%=comentario.User.username%></h2>
+    <a href="/comentarios">Voltar para o index</a>
+    <a href="/comentarios/<%=comentario.id%>/edit">Editar comentário</a>
+    <form method="POST" action="/comentarios/<%=comentario.id %>?_method=DELETE">
+        <button>Apagar</button>
+    </form>
+</body>
+</html>
