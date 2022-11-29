@@ -1,26 +1,16 @@
 'use strict';
 
+
+
 module.exports = {
   up: async (queryInterface, Sequelize) => {
+    const func = ()=>{
+        const allCharacters = axios.get('https://genshin-db-api.vercel.app/api/characters?query=names&matchAliases=true&matchCategories=true&verboseCategories=true');
+    }
+  
+    func();
 
-      await queryInterface.bulkInsert('comments', [
-      {
-          userId: 1,
-          comment: 'lol that is so funny!'
-      },
-      {
-          userId: 2,
-          comment: 'I like to go birdwatching with my dog'
-      },
-      {
-          userId: 3,
-          comment: 'Plz delete your account, Todd'
-      },
-      {
-          userId: 4,
-          comment: 'woof woof woof'
-      }
-    ], {});
+    await queryInterface.bulkInsert('allCharacters', {});
  
   },
 

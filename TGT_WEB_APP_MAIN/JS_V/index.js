@@ -3,6 +3,8 @@ const {comments, users} = require('./controllers');
 const path = require('path');
 var methodOverride = require('method-override');
 
+const genshindb = require('genshin-db');
+
 const app = express();
 
 const session = require('express-session');
