@@ -1,8 +1,6 @@
 # The Game Tool
 <h3>Douglas Candido Domiciano</h3>
 
-<p>Uma aplicação primariamente web, focada em oferecer informação e ferramentas diversas, de forma intuitiva e explicativa sobre as mecânicas mais intrínsecas, obscuras e comumente desconhecidas de um videogame.</p>
-
 <h2> Tema: </h2>
 
 <p>Aprendizagem com Jogos, Gamificação.</p>
