@@ -20,3 +20,11 @@
 <h2> Técnicas computacionais: </h2>
 
 <p></p>
+
+<h2> Requisitos: </h2>
+
+  <h3>Funcionais:</h3>
+    <p></p>
+
+  <h3>Não Funcionais:</h3>
+    <p></p>
