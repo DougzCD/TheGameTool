@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+   
+<%- include('partials/navbar') %>
+
+        <h1>Estoque</h1>
+
+        <form action ="/estoq" method="get">
+
+            <label for="produto">Produto:</label>
+            <input type="text" name="produto" required>
+            <br>
+
+            <label for="quant">Quantidade:</label>
+            <input type="number" name="quant" required>
+            <br>
+
+            <button type="submit">Procurar</button>
+
+        </form>
+
+        <div id="results">
+            <h2>Produto: <%=produto%></h2>
+            <h2>Quantidade: <%=quant%></h2>
+        </div>
+
+<%- include('partials/footer') %>

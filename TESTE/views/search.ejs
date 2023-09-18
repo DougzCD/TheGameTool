@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+   
+<%- include('partials/navbar') %>
+
+        <h1>Cadastro de Cliente</h1>
+
+        <form action ="/search" method="get">
+
+            <label for="search">Search:</label>
+            <input type="text" name="search" required>
+            <br>
+
+            <button type="submit">Pesquisar</button>
+
+        </form>
+
+        <div id="results">
+            <h2><%=search%></h2>
+        </div>
+
+<%- include('partials/footer') %>

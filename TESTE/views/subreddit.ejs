@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+   
+<%- include('partials/navbar') %>
+
+        <h1>Cadastro de Cliente</h1>
+
+        <form action ="/subreddit" method="get">
+
+            <label for="subreddit">Subreddit:</label>
+            <input type="text" name="subreddit" required>
+            <br>
+
+            <button type="submit">Pesquisar</button>
+
+        </form>
+
+        <div id="results">
+            <h2><%=subreddit%></h2>
+        </div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+   
+<%- include('partials/navbar') %>
+
+        <h1>Conversor de Temperatura</h1>
+
+        <form action ="/temper" method="GET">
+
+            <label for="temp">Temperatura:</label>
+            <input type="number" name="temp" required>
+            <br>
+
+            <label for="type">Tipo:</label>
+            <input type="text" name="type" required>
+            <br>
+
+            <button type="submit">Converter</button>
+
+        </form>
+
+        <div id="results">
+            <h2><%= temp %></h2>
+            <h2><%= type %></h2>
+        </div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,37 @@
+<%- include('partials/header') %>
+
+  <%- include('partials/navbar') %>
+
+  <form action ="/subreddit" method="get">
+
+    <label for="subreddit">Subreddit:</label>
+    <input type="text" name="subreddit" required>
+    <br>
+
+    <button type="submit">Pesquisar</button>
+  </form>
+
+  <div id="subreddit">
+
+    <% if (!dado) { %>
+      
+    <%} else { %>
+
+      <h1>Apresentando o subreddit <%= name %> </h1>
+      <h2><%= description%></h2>
+      <h2>Subscribers: <%= subscribers %> </h2>
+      <hr>
+
+      <% for(post of posts) { %>
+        <article>
+          <p><%= post.title %> - <%= post.author %> </p>
+
+          <% if (post.img) { %>
+            <img src=<%= post.img %>>
+          <% } %>
+        </article>
+      <% } %>
+    <% } %>
+  </div>
+  
+<%- include('partials/footer') %>
